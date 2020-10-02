@@ -224,8 +224,8 @@ class UFCModel():
         clf = linear_model.LinearRegression()
         clf.fit(df_heightreach['Height_F1'].to_numpy().reshape(-1,1),df_heightreach['Reach_F1'].to_numpy().reshape(-1,1))
 
-        print('DISP FOR SAVING ONLY')
-        joblib.dump(clf, 'reach_from_height_clf.pkl')
+        # print('DISP FOR SAVING ONLY')
+        # joblib.dump(clf, 'reach_from_height_clf.pkl')
         
         # StatUtil().plt_line(df_heightreach['Height_F1'],df_heightreach['Reach_F1'],'Height','Reach','Title',None)
         
